@@ -13,6 +13,12 @@ function Canvas({show, handleClose}) {
         <Offcanvas.Body>
           <CanvasCard />
         </Offcanvas.Body>
+        <div className='offcanvas-footer'>
+        <div className="d-flex justify-content-between align-items-center">
+          <h5>Toplam Tutar</h5>
+          <h5><span id="total">0</span> $</h5>
+        </div>
+        </div>
       </Offcanvas>
 
   );
