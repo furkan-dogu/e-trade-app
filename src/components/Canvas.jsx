@@ -1,26 +1,30 @@
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import CanvasCard from './CanvasCard';
+import Offcanvas from "react-bootstrap/Offcanvas";
+import CanvasCard from "./CanvasCard";
 
-function Canvas({show, handleClose}) {
-
+function Canvas({ show, handleClose, baskets, setBaskets }) {
+  const total = baskets.reduce(
+    (acc, item) => acc + item.quantity * item.price,
+    0
+  );
   return (
-
-
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Sepetim</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <CanvasCard />
-        </Offcanvas.Body>
-        <div className='offcanvas-footer'>
-        <div className="d-flex justify-content-between align-items-center">
-          <h5>Toplam Tutar</h5>
-          <h5><span id="total">0</span> $</h5>
+    <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title>My Cart</Offcanvas.Title>
+      </Offcanvas.Header>
+      <Offcanvas.Body>
+        <CanvasCard baskets={baskets} setBaskets={setBaskets} />
+      </Offcanvas.Body>
+      {baskets.length > 0 && (
+        <div className="offcanvas-footer">
+          <div className="d-flex justify-content-between align-items-center">
+            <h5>Total Amount</h5>
+            <h5>
+              <span>{total}</span> $
+            </h5>
+          </div>
         </div>
-        </div>
-      </Offcanvas>
-
+      )}
+    </Offcanvas>
   );
 }
 
