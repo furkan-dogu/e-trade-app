@@ -6,7 +6,7 @@ function ModalDetail({ show, handleClose, product }) {
 
   return (
     <Modal show={show} onHide={handleClose}>
-      <Image src={thumbnail} className="p-2" height="250px" alt={title} />
+      <Image src={thumbnail} className="p-2" height="300px" alt={title} />
       <Modal.Header className="mx-auto">
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>

@@ -6,7 +6,7 @@ const Home = () => {
   const [products, setProducts] = useState([])
   const getProducts = async () => {
     try {
-      const url = "https://dummyjson.com/products"
+      const url = "https://dummyjson.com/products?limit=40"
       const res = await fetch(url)
       const data = await res.json()
       setProducts(data.products)
