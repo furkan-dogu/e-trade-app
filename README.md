@@ -32,6 +32,7 @@ Welcome to the Shopping App! This web application I built with React allows user
 
 - React
 - Styling with [Bootstrap](https://getbootstrap.com/) and [React-Bootstrap](https://react-bootstrap.netlify.app/)
+- [DummyJSON API](https://dummyjson.com/) for products data
 - [React-Icons](https://react-icons.github.io/react-icons/) for icons
 
 ## Project Skeleton
@@ -74,3 +75,7 @@ SOLUTION
 ## Compatibility
 
 The project is compatible with both wide-screen computers and mobile devices.
+
+## Acknowledgments
+
+Products data provided by [DummyJSON](https://dummyjson.com/)
