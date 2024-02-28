@@ -22,10 +22,10 @@ const Home = () => {
   }, [])
   
   return (
-    <div>
+    <>
       <Navbar baskets={baskets} setBaskets={setBaskets} />
       <Products products={products} baskets={baskets} setBaskets={setBaskets}  />
-    </div>
+    </>
   )
 }
 

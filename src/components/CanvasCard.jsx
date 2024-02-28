@@ -35,8 +35,8 @@ function CanvasCard({ baskets, setBaskets }) {
     <>
     {baskets.lenght === 0 && ""}
     {baskets.length > 0 && (
-      baskets.map((basket, index) => (
-        <div className="card mb-3" style={{ maxWidth: 540 }} key={index}>
+      baskets.map((basket) => (
+        <div className="card mb-3" style={{ maxWidth: 540 }} key={basket.id}>
         <div className="row g-0">
           <div className="col-md-4 my-auto">
             <Image src={basket.images[0]} className="img-fluid rounded-start" />

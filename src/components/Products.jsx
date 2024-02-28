@@ -60,7 +60,6 @@ const Products = ({ products, baskets, setBaskets }) => {
       </section>
       <section
         className="d-flex justify-content-center flex-wrap gap-3 mt-4"
-        id="searchs"
       >
         <div className="col-12 col-sm-6">
           <input

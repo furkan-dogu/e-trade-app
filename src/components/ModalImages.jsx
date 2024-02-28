@@ -6,7 +6,7 @@ function ModalImages({ images }) {
   return (
     <Carousel>
       {images.map((image, index) => (
-        <Carousel.Item key={index}>
+        <Carousel.Item interval={2000} key={index}>
           <Image className="d-block w-100 p-2" height="300px" src={image} alt="slide" />
         </Carousel.Item>
       ))}

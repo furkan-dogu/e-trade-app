@@ -12,7 +12,7 @@ const Navbar = ({ baskets, setBaskets }) => {
   return (
     <nav className="navbar bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <Image src={Logo} alt="Logo" width={50} height={48} />
+        <Image src={Logo} alt="Logo" width={50} />
         <button
           type="button"
           className="btn btn-secondary position-relative"
